@@ -1,14 +1,19 @@
-# Lavalink Server 🎵
+# Lavalink Render Deployment
 
-A lightweight Lavalink server for Discord music bots (Render-ready).
+## 🚀 Quick Setup
+1. Upload `Lavalink.jar`, `Dockerfile`, and `application.yml` to your Render repo.
+2. Go to **Render → New Web Service**.
+3. Choose **Language → Docker**.
+4. Set:
+   - **Branch:** main
+   - **Region:** Oregon
+   - **Port:** 2333
+   - **Dockerfile Path:** `./Dockerfile`
+5. Add environment variables:
+   - `PORT=2333`
+   - `LAVALINK_PASSWORD=youshallnotpass`
 
-### 🔧 Configuration
-- **Port:** 2333  
-- **Password:** youshallnotpass  
-- **Sources:** YouTube, SoundCloud, HTTP, Twitch  
+6. Deploy.
 
-### 🚀 Deployment (Render)
-1. Create a new Web Service on [Render](https://render.com)
-2. Connect this GitHub repo
-3. Environment = Docker
-4. Add Environment Variable:
+When ready, your Lavalink server will show:
+
