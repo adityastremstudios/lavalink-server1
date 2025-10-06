@@ -7,8 +7,8 @@ lavalink:
     password: "youshallnotpass"
     sources:
       youtube: true
-      bandcamp: true
       soundcloud: true
+      bandcamp: true
       twitch: true
       vimeo: true
       http: true
@@ -17,9 +17,3 @@ lavalink:
     frameBufferDurationMs: 5000
     gc-warnings: true
 
-metrics:
-  prometheus:
-    enabled: false
-  logs:
-    lavalink:
-      level: INFO
