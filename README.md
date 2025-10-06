@@ -1,19 +1,14 @@
-# Lavalink Render Deployment
+# Lavalink on Render
 
-## 🚀 Quick Setup
-1. Upload `Lavalink.jar`, `Dockerfile`, and `application.yml` to your Render repo.
-2. Go to **Render → New Web Service**.
-3. Choose **Language → Docker**.
-4. Set:
-   - **Branch:** main
-   - **Region:** Oregon
-   - **Port:** 2333
-   - **Dockerfile Path:** `./Dockerfile`
-5. Add environment variables:
-   - `PORT=2333`
-   - `LAVALINK_PASSWORD=youshallnotpass`
+## Steps
+1. Upload these files to a new GitHub repo.
+2. Download the latest Lavalink.jar from:
+   👉 https://github.com/lavalink-devs/Lavalink/releases
+3. Commit and push it.
+4. Go to **Render → New Web Service**.
+   - Environment: **Docker**
+   - Port: **2333**
+   - Region: **Oregon**
+5. Add Environment Variables:
 
-6. Deploy.
-
-When ready, your Lavalink server will show:
 
