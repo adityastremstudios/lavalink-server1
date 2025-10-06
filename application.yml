@@ -4,24 +4,22 @@ server:
 
 lavalink:
   server:
-    password: youshallnotpass
+    password: "youshallnotpass"
     sources:
       youtube: true
+      bandcamp: true
       soundcloud: true
-      http: true
       twitch: true
+      vimeo: true
+      http: true
+      local: false
     bufferDurationMs: 400
-    frameBufferDurationMs: 1000
-    youtubePlaylistLoadLimit: 6
-    playerUpdateInterval: 1
-    youtubeSearchEnabled: true
-    resamplingQuality: HIGH
+    frameBufferDurationMs: 5000
     gc-warnings: true
-    opusEncodingQuality: 10
 
-logging:
-  file:
-    path: ./logs/
-  level:
-    root: INFO
-    lavalink: INFO
+metrics:
+  prometheus:
+    enabled: false
+  logs:
+    lavalink:
+      level: INFO
